@@ -1,0 +1,1 @@
+# SquareCloud-Manager-CLI
