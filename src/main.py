@@ -1,6 +1,6 @@
 from src.menus.InitialMenu import InitialMenu
 
-VERSION = "0.1.0"
+VERSION = "1.0.0"
 
 def main():
     menu = InitialMenu(version=VERSION)
