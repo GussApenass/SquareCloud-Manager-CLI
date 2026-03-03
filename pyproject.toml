@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "squarecloud-manager-cli"
+version = "1.0.0"
+description = "Uma CLI feita para a praticidade do Square Cloud Manager."
+authors = [
+    {name = "GussApenass"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "InquirerPy>=0.3.4",
+    "rich>=13.0.0",
+    "requests>=2.28.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/GussApenass/SquareCloud-Manager-CLI"
+Repository = "https://github.com/GussApenass/SquareCloud-Manager-CLI"
+
+[project.scripts]
+squarecloud_manager = "src.main:main"
+
+[tool.setuptools]
+packages = ["src", "src.funcs", "src.menus", "src.utils"]
+py-modules = ["main"]
